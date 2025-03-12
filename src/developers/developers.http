@@ -1,0 +1,26 @@
+### List developers
+GET http://localhost:3000/developers
+
+### Get developer
+GET http://localhost:3000/developers/dev_AHp3avXDVrv3wysdfS2hH
+
+### Create developer
+POST http://localhost:3000/developers
+Content-Type: application/json
+
+{
+    "name": "Pedro Paulo",
+    "email": "pedro.prado@developers.com",
+    "dateOfBirth": "2000-09-25"
+}
+
+### Update developer
+PATCH http://localhost:3000/developers/dev_AHp3avXDVrv3wysdfS2hH
+Content-Type: application/json
+
+{
+    "email": "pedro.prado@developers.com.br"
+}
+
+### Delete developer
+DELETE http://localhost:3000/developers/dev_AHp3avXDVrv3wysdfS2hH
